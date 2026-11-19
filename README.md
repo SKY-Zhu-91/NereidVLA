@@ -1,13 +1,19 @@
 <div align="center">
 
+<a href="https://sky-zhu-91.github.io/NereidVLA/">
+  <img src="assets/robot.png" alt="NereidVLA Project Page" width="120">
+</a>
+
 # NereidVLA
 ## Learning to Understand and Navigate the Underwater World
 
 **Transferring marine spatial knowledge to language-conditioned 3D underwater navigation.**
 
+[![Project Page](https://img.shields.io/badge/🌐_Project-Website-007EC6)](https://sky-zhu-91.github.io/NereidVLA/)
 [![arXiv](https://img.shields.io/badge/arXiv-2611.24864-B31B1B?logo=arxiv&logoColor=white)](https://arxiv.org/abs/2611.24864)
 [![Paper](https://img.shields.io/badge/Paper-PDF-1565C0)](https://arxiv.org/pdf/2611.24864)
 [![GitHub](https://img.shields.io/badge/GitHub-NereidVLA-181717?logo=github&logoColor=white)](https://github.com/SKY-Zhu-91/NereidVLA)
+
 
 Chenjie Zhao<sup>1,*</sup>,
 Zhiliang Zhu<sup>2,*,†,‡</sup>,
