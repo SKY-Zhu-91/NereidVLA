@@ -1,0 +1,68 @@
+#gallery.scene-gallery-section { padding-top: 40px; padding-bottom: 76px; }
+#gallery .gallery-heading { margin-bottom: 26px; align-items: end; }
+#gallery .gallery-heading h2 { font-size: clamp(30px, 3vw, 42px); letter-spacing: -.04em; }
+#gallery .gallery-heading > p { max-width: 440px; color: #abc4d2; font-size: 15px; line-height: 1.8; }
+.scene-toolbar { display: flex; justify-content: space-between; align-items: center; gap: 18px; margin-bottom: 23px; }
+.scene-filters { display: flex; flex-wrap: wrap; gap: 8px; }
+.scene-filter { min-height: 40px; padding: 8px 14px; border: 1px solid #2c4b5d; border-radius: 24px; background: transparent; color: #bad2df; font: inherit; font-size: 13px; font-weight: 650; line-height: 1.5; }
+.scene-filter:hover { border-color: #6da9b5; background: #0e3043; color: #eaf9fc; }
+.scene-filter[aria-pressed='true'] { background: #91dfdb; color: #073341; border-color: #91dfdb; }
+.scene-tools { display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+#scene-count { font-size: 13px; color: #99b8c8; font-variant-numeric: tabular-nums; }
+.scene-motion-toggle { min-height: 40px; border: 1px solid #486d80; background: transparent; color: #d5eef1; border-radius: 24px; padding: 8px 13px; font-size: 13px; }
+.scene-gallery { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 14px; }
+.scene-tile { min-width: 0; margin: 0; border: 1px solid #28495a; border-radius: 10px; overflow: hidden; background: #0b2c3c; transition: border-color .18s; }
+.scene-tile:hover, .scene-tile:focus-within { border-color: #87d5d5; }
+.scene-tile-visual { position: relative; aspect-ratio: 16/10; overflow: hidden; }
+.scene-poster, .scene-mini-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.scene-mini-video { opacity: 0; pointer-events: none; }
+.scene-mini-video.has-frames { opacity: 1; }
+.scene-open { position: absolute; inset: 0; width: 100%; border: 0; text-align: left; padding: 0; color: white; background: linear-gradient(180deg, #00132115 0%, transparent 35%, #001524d9 100%); }
+.scene-open:hover { background: linear-gradient(180deg, #00132100 0%, transparent 35%, #001524e6 100%); }
+.scene-open:focus-visible { outline: 2px solid #b6eee5; outline-offset: -4px; border-radius: 8px; }
+.scene-tile-title { position: absolute; left: 13px; right: 13px; bottom: 29px; font-size: 14px; font-weight: 750; line-height: 1.45; text-shadow: 0 1px 5px #00121f; }
+.scene-tile-family { position: absolute; left: 13px; right: 13px; bottom: 10px; font-size: 11px; color: #c5dce5; line-height: 1.4; }
+.scene-expand { position: absolute; top: 9px; right: 10px; width: 26px; height: 26px; display: grid; place-items: center; border: 1px solid #d7efee44; border-radius: 50%; color: #e5f8fc; background: #04233391; font-size: 19px; }
+.scene-mini-toggle { position: absolute; right: 9px; bottom: 8px; z-index: 2; min-height: 32px; border: 1px solid #8fc9ce70; border-radius: 20px; background: #062535e6; color: #e2faf6; padding: 5px 9px; font-size: 11px; }
+.scene-tile:has(.scene-mini-toggle) .scene-tile-title, .scene-tile:has(.scene-mini-toggle) .scene-tile-family { right: 63px; }
+#gallery .gallery-note { margin-top: 18px; font-size: 12px; color: #99b7c7; }
+.scene-dialog { width: min(1100px, calc(100vw - 48px)); max-height: calc(100dvh - 48px); padding: 22px; border: 1px solid #3b6375; border-radius: 14px; background: #082535; color: #d4e9f0; box-shadow: 0 25px 100px #0008; }
+.scene-dialog::backdrop { background: #00111cc9; backdrop-filter: blur(5px); }
+.scene-dialog-header { display: flex; justify-content: space-between; align-items: center; gap: 20px; margin-bottom: 18px; }
+#gallery .scene-dialog .eyebrow { font-size: 11px; margin-bottom: 4px; }
+#gallery .scene-dialog h3 { font-size: 25px; margin: 0; color: #edfbff; }
+.scene-dialog-close { min-width: 65px; min-height: 42px; background: transparent; border: 1px solid #759baa; color: #e7f8fc; border-radius: 24px; padding: 8px 14px; font-size: 14px; }
+.scene-dialog-close:hover { background: #174255; }
+.scene-dialog-media { background: #021925; border-radius: 8px; overflow: hidden; display: grid; place-items: center; }
+.scene-dialog-media img, .scene-dialog-media video { display: block; width: 100%; max-height: calc(100dvh - 220px); object-fit: contain; }
+.scene-dialog-caption { margin: 14px 0 0; color: #acc8d6; font-size: 13px; }
+@media (max-width: 1100px) {
+ .scene-gallery { grid-template-columns: repeat(4,minmax(0,1fr)); gap: 12px; }
+ .scene-toolbar { align-items: flex-start; }
+ .scene-tools { padding-top: 3px; }
+}
+@media (max-width: 850px) {
+ .scene-gallery { grid-template-columns: repeat(3,minmax(0,1fr)); }
+ .scene-toolbar { flex-wrap: wrap; gap: 13px; }
+ .scene-tools { padding-top: 0; width: 100%; justify-content: space-between; }
+ #gallery .gallery-heading { display: block; }
+ #gallery .gallery-heading > p { max-width: 650px; margin-top: 15px; }
+}
+@media (max-width: 560px) {
+ #gallery.scene-gallery-section { padding-top: 30px; padding-bottom: 48px; }
+ .scene-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px; }
+ .scene-tile-visual { aspect-ratio: 4/3; }
+ .scene-filter { min-height: 40px; padding: 8px 12px; font-size: 12px; }
+ .scene-filters { gap: 7px; }
+ .scene-tile-title { left: 10px; right: 9px; bottom: 30px; font-size: 13px; }
+ .scene-tile-family { left: 10px; bottom: 10px; font-size: 11px; }
+ .scene-expand { top: 7px; right: 7px; width: 24px; height: 24px; font-size: 17px; }
+ .scene-dialog { width: calc(100vw - 24px); padding: 14px; max-height: calc(100dvh - 24px); }
+ #gallery .scene-dialog h3 { font-size: 22px; }
+ .scene-dialog-header { gap: 12px; }
+ .scene-dialog-close { min-width: 60px; font-size: 13px; }
+ .scene-mini-toggle { min-height: 34px; right: 7px; font-size: 10px; }
+ .scene-tile:has(.scene-mini-toggle) .scene-tile-title, .scene-tile:has(.scene-mini-toggle) .scene-tile-family { right: 54px; }
+}
+@media (prefers-reduced-motion: reduce) { .scene-tile { transition: none; } }
+@media print { .scene-tools, .scene-filters, .scene-mini-toggle { display: none; } }

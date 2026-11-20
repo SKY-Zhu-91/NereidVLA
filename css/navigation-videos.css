@@ -1,0 +1,35 @@
+.featured-recording .recording-panel { display: block; }
+.featured-recording .recording-info { padding-top: 22px; }
+.featured-recording .recording-description { font-size: 16px; }
+.featured-recording .recording-instruction blockquote { font-size: 15px; }
+.recording-chapters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 16px; }
+.recording-chapter { min-height: 46px; padding: 10px 15px; border: 1px solid #d4e2e8; border-radius: 7px; background: #f1f7f9; color: #3c5869; font-size: 14px; font-weight: 700; }
+.recording-chapter[aria-current="true"] { color: #fff; background: #0b5769; border-color: #0b5769; }
+.recording-chapter:hover { background: #dceff0; color: #164452; }
+.recording-chapter[aria-current="true"]:hover { color: #fff; background: #0d6877; }
+.scene-records { margin: 20px 0 0; }
+.scene-record-list { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 30px; padding-bottom: 22px; }
+.scene-record h4 { font-size: 15px; margin: 0 0 8px; color: var(--ink); }
+.scene-record p { font-size: 14px; color: var(--muted); margin-bottom: 9px; }
+.scene-record a { display: inline-block; min-height: 44px; padding: 8px 0; font-size: 14px; font-weight: 700; }
+@media (max-width: 560px) {
+  .recording-chapters { display: grid; grid-template-columns: 1fr 1fr; }
+  .recording-chapter { text-align: left; padding: 10px; font-size: 13px; }
+  .scene-record-list { grid-template-columns: 1fr; }
+}
+
+.scene-view-controls { display: flex; flex-wrap: wrap; gap: 8px; margin: 16px 0 22px; }
+.scene-view-button { min-height: 44px; padding: 8px 14px; border: 1px solid #cee1e6; border-radius: 6px; background: #eff6f8; color: #315567; font-size: 14px; font-weight: 650; }
+.scene-view-button[aria-pressed="true"] { background: #0b5769; color: white; border-color: #0b5769; }
+.media-canvas.is-zoomed video { width: 200%; height: 200%; transform: translate(var(--zoom-x,0%),var(--zoom-y,0%)); max-width: none; }
+@media (max-width: 560px) { .scene-view-controls { display: grid; grid-template-columns: 1fr 1fr; } .scene-view-button:first-child { grid-column: 1 / -1; } }
+
+
+.media-player:fullscreen { align-items: center; }
+.media-player:fullscreen .media-canvas {
+  flex: none;
+  width: min(100vw, calc((100dvh - 64px) * 16 / 9));
+  height: auto;
+  aspect-ratio: 16 / 9;
+}
+.media-player:fullscreen .media-controls { width: 100%; }
