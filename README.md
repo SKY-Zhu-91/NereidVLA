@@ -15,27 +15,33 @@
 [![GitHub](https://img.shields.io/badge/GitHub-NereidVLA-181717?logo=github&logoColor=white)](https://github.com/SKY-Zhu-91/NereidVLA)
 
 
-Chenjie Zhao<sup>1,*</sup>,
-Zhiliang Zhu<sup>2,*,†,‡</sup>,
-Quan Chen<sup>1</sup>,
-Yuquan Xue<sup>3</sup>,
-Xingxue Shi<sup>4</sup>,
-Puyue Wang<sup>5</sup>,
-Zhiqiang Zhao<sup>2</sup>,
-Kangye Zheng<sup>2</sup>,
-Boyang Xu<sup>2</sup>,
-Mingwei Lin<sup>1,†</sup>,
-Dejun Li<sup>1</sup>
+<p>
+  Chenjie Zhao<sup>1,&#42;</sup>,
+  Zhiliang Zhu<sup>2,&#42;,†,‡</sup>,
+  Quan Chen<sup>1</sup>,
+  Yuquan Xue<sup>3</sup>,
+  Xingxue Shi<sup>4</sup>,
+  Puyue Wang<sup>5</sup>,
+  Zhiqiang Zhao<sup>2</sup>,
+  Kangye Zheng<sup>2</sup>,
+  Boyang Xu<sup>2</sup>,
+  Mingwei Lin<sup>1,†</sup>,
+  Dejun Li<sup>1</sup>
+</p>
 
-<sup>1</sup>Zhejiang University ·
-<sup>2</sup>Harbin Engineering University ·
-<sup>3</sup>Nanyang Technological University  
-<sup>4</sup>Harbin Institute of Technology ·
-<sup>5</sup>University of Auckland
+<p>
+  <sup>1</sup>Zhejiang University ·
+  <sup>2</sup>Harbin Engineering University ·
+  <sup>3</sup>Nanyang Technological University<br>
+  <sup>4</sup>Harbin Institute of Technology ·
+  <sup>5</sup>University of Auckland
+</p>
 
-<sup>*</sup>Equal contribution ·
-<sup>†</sup>Corresponding authors ·
-<sup>‡</sup>Project leader
+<p>
+  <sup>&#42;</sup>Equal contribution (co-first authors) ·
+  <sup>†</sup>Corresponding authors ·
+  <sup>‡</sup>Project leader
+</p>
 
 </div>
 
